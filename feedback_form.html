@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INJECT PARTY - Feedback Form</title>
+    <style>
+        body {
+            background: url('Background Party.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+        }
+        .logo {
+            width: 200px;
+            margin: 20px auto;
+        }
+        .form-container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            width: 50%;
+            margin: auto;
+            border-radius: 10px;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+        }
+        button {
+            background-color: green;
+            color: white;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <img src="Inject Party-Photoroom.png" alt="Inject Party Logo" class="logo">
+    <h1>INJECT PARTY - Feedback Form</h1>
+    <div class="form-container">
+        <form action="submit_feedback.php" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="feedback" placeholder="Enter your feedback here" required></textarea>
+            <select name="rating" id="rating" required>
+                <option value="">Select Rating</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Fair</option>
+                <option value="3">3 - Good</option>
+                <option value="4">4 - Very Good</option>
+                <option value="5">5 - Excellent</option>
+            </select>    
+            <button type="submit">Submit Feedback</button>
+        </form>
+                        
+    </div>
+</body>
+</html>
